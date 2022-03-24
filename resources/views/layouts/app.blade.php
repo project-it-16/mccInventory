@@ -9,12 +9,21 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         
     </head>
     <body class="antialiased">
         <div id="app">
-                <div ><h1>try</h1></div>
+
+            
+            @yield('content')
+
         </div>
-       <script src="{{ mix('js/app.js') }}"></script>
+       {{-- <script src="{{ mix('js/app.js') }}"></script> --}}
     </body>
 </html>
+
+    <!-- function myFunction() {
+        var element = document.getElementById("myDIV");
+        element.classList.toggle("mystyle");
+    } -->
